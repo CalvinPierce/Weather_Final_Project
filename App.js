@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-=======
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, ActivityIndicator, SafeAreaView, ScrollView, Alert, RefreshControl } from 'react-native';
 import * as Location from 'expo-location';
@@ -91,17 +76,11 @@ const App = () => {
 }
 
 
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-<<<<<<< HEAD
-    justifyContent: 'center',
-  },
-});
-=======
     justifyContent: 'flex-start',
   },
   loading: {
@@ -134,4 +113,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
+
+

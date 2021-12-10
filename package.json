@@ -10,25 +10,18 @@
     "eject": "expo eject"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "expo": "~43.0.2",
-=======
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
     "expo": "~43.0.2",
     "expo-location": "^13.0.4",
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-<<<<<<< HEAD
-=======
     "react-native-get-location": "^2.2.1",
     "react-native-location": "^2.5.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
     "react-native-web": "0.17.1"
   },
   "devDependencies": {

@@ -1,21 +1,7 @@
-<<<<<<< HEAD
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-=======
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, ActivityIndicator, SafeAreaView, ScrollView, Alert, RefreshControl } from 'react-native';
 import * as Location from 'expo-location';
+import { textDecorationColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 const App = () => {
   const KEY = '3ff44f18e57daa08090e013fda247b2c'
@@ -60,6 +46,9 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
+      
+      <Text style={styles.header}>Local Weather Forecasts</Text>
+
       <ScrollView
         refreshControl={
           <RefreshControl
@@ -91,18 +80,20 @@ const App = () => {
 }
 
 
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ecebbd',
     alignItems: 'center',
-<<<<<<< HEAD
-    justifyContent: 'center',
-  },
-});
-=======
     justifyContent: 'flex-start',
+  },
+  header: {
+    padding: 20,
+    fontSize: 25,
+    color: '#008000',
+    textDecorationLine: 'underline',
+    fontFamily: 'sans-serif-condensed',
+    textTransform: 'uppercase'
   },
   loading: {
     flex: 1,
@@ -112,6 +103,8 @@ const styles = StyleSheet.create({
   },
   day: {
     flexDirection: 'row',
+    borderBottomColor: "red",
+    borderBottomWidth: StyleSheet.hairlineWidth
   },
   dayDetails: {
     justifyContent: 'center',
@@ -134,4 +127,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
->>>>>>> 696fa6cc623b1a66e0e76dda082fc66951bc1745
+
+
